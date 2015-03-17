@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an outdated browser. Please upgrade.</p>
+        <![endif]-->
+
+        <p>JointJS Sandbox</p>
+
+        <div id="paper"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/joint.js"></script>
+        <script src="js/vendor/joint.shapes.erd.js"></script>
+        <script src="js/vendor/joint.shapes.uml.js"></script>
+        <script src="js/sandbox.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                sandbox.Demo.renderDiagram();
+            });
+        </script>
+
+    </body>
+</html>
