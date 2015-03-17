@@ -1,14 +1,6 @@
 package joint.shapes.basic;
 
-typedef PositionCoordinates = {
-  var x: Int;
-  var y: Int;
-}
-
-typedef RectSizeOptions = {
-  var width: Int;
-  var height: Int;
-}
+import joint.Base;
 
 typedef RectOptions = {
   @:optional var position: PositionCoordinates;
