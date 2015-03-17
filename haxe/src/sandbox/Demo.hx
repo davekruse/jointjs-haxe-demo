@@ -22,7 +22,7 @@ class Demo {
     var graph = new Graph();
     var paper = new Paper({
         el: element,
-        width: 600,
+        width: 800,
         height: 600,
         gridSize: 10,
         model: graph
@@ -59,12 +59,20 @@ class Demo {
             name: 'SomeAbstract',
             attributes: ['someAttribute: String'],
             methods: ['+ isCool(text: String): Boolean']
+        }),
+        gamma: new joint.shapes.uml.Interface({
+            position: {x: 440, y: 190},
+            size: { width: 200, height: 100},
+            name: 'SomeInterface',
+            attributes: ['someAttribute: String'],
+            methods: ['+ isImplementedl(text: String): Boolean']
         })
 
     }
 
     graph.addCell(classes.alpha);
     graph.addCell(classes.beta);
+    graph.addCell(classes.gamma);
 
   }
 }
