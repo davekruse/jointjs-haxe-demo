@@ -6,5 +6,7 @@ requires iruffner's haxe jquery (m3.jq.JQ) library https://github.com/iruffner/h
 symlink haxe/m3 directory at /haxe/src/m3
 
 To compile haxe:
+
 ~ cd /haxe
+
 ~ haxe build.hxml

@@ -10,7 +10,7 @@ sandbox.Demo.renderDiagram = function() {
 	var element = new $("#paper");
 	var graph = new joint.dia.Graph();
 	var paper = new joint.dia.Paper({ el : element, width : 600, height : 600, gridSize : 10, model : graph});
-	var rect = new joint.shapes.basic.Rect({ position : { x : 100, y : 30}, size : { width : 100, height : 30}, attrs : { rect : { fill : "blue"}, text : { text : "my box", fill : "white"}}});
+	var rect = new joint.shapes.basic.Rect({ position : { x : 100, y : 30}, size : { width : 100, height : 30}, attrs : { rect : { fill : "blue"}, text : { text : "Demo 1", fill : "white"}}});
 	graph.addCell(rect);
 };
 var q = window.jQuery;
