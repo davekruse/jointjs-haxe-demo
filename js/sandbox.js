@@ -11,8 +11,8 @@ sandbox.Demo.renderDiagram = function() {
 	var paper = new joint.dia.Paper({ el : element, width : 600, height : 600, gridSize : 10, model : graph});
 	var rect = new joint.shapes.basic.Rect({ position : { x : 100, y : 30}, size : { width : 100, height : 30}, attrs : { rect : { fill : "blue"}, text : { text : "Demo 1", fill : "white"}}});
 	graph.addCell(rect);
-	var classes_alpha = new joint.shapes.uml.Class({ size : { width : 200, height : 100}, name : "SomeClass", attributes : ["someAttribute: String"], methods : ["+ isAwesome(text: String): Boolean"]});
-	var classes_beta = new joint.shapes.uml.Abstract({ size : { width : 200, height : 100}, name : "SomeAbstract", attributes : ["someAttribute: String"], methods : ["+ isCool(text: String): Boolean"]});
+	var classes_alpha = new joint.shapes.uml.Class({ position : { x : 20, y : 190}, size : { width : 200, height : 100}, name : "SomeClass", attributes : ["someAttribute: String"], methods : ["+ isAwesome(text: String): Boolean"]});
+	var classes_beta = new joint.shapes.uml.Abstract({ position : { x : 230, y : 190}, size : { width : 200, height : 100}, name : "SomeAbstract", attributes : ["someAttribute: String"], methods : ["+ isCool(text: String): Boolean"]});
 	graph.addCell(classes_alpha);
 	graph.addCell(classes_beta);
 };
