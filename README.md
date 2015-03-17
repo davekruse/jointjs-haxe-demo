@@ -2,11 +2,11 @@
 Sandbox demo of jointjs in haXe.
 
 ## Setup
-requires iruffner's haxe jquery (m3.jq.JQ) library https://github.com/iruffner/haxe
+Depends on https://github.com/iruffner/haxe for
+- m3.jq.JQ
+- m3.util.LambdaX
 symlink haxe/m3 directory at /haxe/src/m3
 
 To compile haxe:
-
-~ cd /haxe
-
-~ haxe build.hxml
+ 	~ cd /haxe
+ 	~ haxe build.hxml
