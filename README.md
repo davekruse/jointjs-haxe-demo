@@ -8,5 +8,7 @@ Depends on https://github.com/iruffner/haxe for
 symlink haxe/m3 directory at /haxe/src/m3
 
 To compile haxe:
-	cd /haxe
-	haxe build.hxml
+'''
+cd /haxe
+haxe build.hxml
+'''
