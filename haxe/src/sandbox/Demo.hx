@@ -41,7 +41,7 @@ class Demo {
     var rect = new Rect({
         position: { x: 20, y: 10 },
         size: { width: 150, height: 30 },
-        attrs: { rect: { fill: 'blue' }, text: { text: 'Basic Shape Rect', fill: 'white' } }
+        attrs: { rect: { fill: 'white' }, text: { text: 'Basic Shape Rect', fill: 'black' } }
     });
     graph.addCell(rect);
 
@@ -103,6 +103,7 @@ class Demo {
             queries.push(query.sql);
         });
 
+        // draw cube as UML shape
         var cube = new joint.shapes.uml.Class({
             position: {x: x, y: y},
             size: {width: 200, height:150},

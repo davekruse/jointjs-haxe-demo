@@ -29,7 +29,7 @@ sandbox.Demo.renderDiagram = function() {
 	var element = new $("#paper");
 	var graph = new joint.dia.Graph();
 	var paper = new joint.dia.Paper({ el : element, width : 800, height : 600, gridSize : 10, model : graph});
-	var rect = new joint.shapes.basic.Rect({ position : { x : 20, y : 10}, size : { width : 150, height : 30}, attrs : { rect : { fill : "blue"}, text : { text : "Basic Shape Rect", fill : "white"}}});
+	var rect = new joint.shapes.basic.Rect({ position : { x : 20, y : 10}, size : { width : 150, height : 30}, attrs : { rect : { fill : "white"}, text : { text : "Basic Shape Rect", fill : "black"}}});
 	graph.addCell(rect);
 	var classes_alpha = new joint.shapes.uml.Class({ position : { x : 20, y : 50}, size : { width : 200, height : 100}, name : "SomeClass", attributes : ["someAttribute: String"], methods : ["+ isAwesome(text: String): Boolean"]});
 	var classes_beta = new joint.shapes.uml.Abstract({ position : { x : 230, y : 50}, size : { width : 200, height : 100}, name : "SomeAbstract", attributes : ["someAttribute: String"], methods : ["+ isCool(text: String): Boolean"]});
